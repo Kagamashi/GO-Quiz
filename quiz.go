@@ -63,10 +63,7 @@ func quiz(records []Quiz, timeout int) (*Stat, error) {
 				stat.correct++
 			} else {
 				stat.incorrect++
-			}
-		}
-	}()
-
+	
 	select {
 	case <-errs:
 		return nil, <-errs
