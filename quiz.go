@@ -31,10 +31,7 @@ func readCSV(file string) ([]Quiz, error) {
 	var quizes []Quiz
 	r := csv.NewReader(f)
 	for {
-		line, err := r.Read()
-		if err == io.EOF {
-			break
-		}
+
 		if err != nil {
 			return nil, err
 		}
