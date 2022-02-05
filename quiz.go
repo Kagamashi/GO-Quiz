@@ -87,4 +87,4 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Printf("\nQuestion answered: %v, Correct: %v, Incorrect: %v\n", stat.all, stat.correct, stat.incorrect)
-}
+}}
